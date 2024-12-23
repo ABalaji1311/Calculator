@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(https://img.freepik.com/free-photo/weathered-blue-page_53876-88602.jpg?t=st=1734419335~exp=1734422935~hmac=8a39441b3dedaeb62c0512d8515a8be1a616820d1b004532b6cb2118a32bf64d&w=900);
+
+}
+
+.calculator{
+    position: absolute;
+    top: 100px;
+    padding: 20px;
+    background-image: url(https://img.freepik.com/free-photo/blue-smooth-textured-paper-background_53876-103923.jpg?ga=GA1.1.28572561.1731478286&semt=ais_hybrid);
+    border-radius: 20px;
+    border: 1px solid rgb(46, 52, 79);
+    box-shadow:0px 15px 20px black;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    color: azure;
+
+
+}
+
+button{
+     padding: 10px;
+     margin: 2px;
+    width: 40px;
+    height: 40px;
+    border: 10px;
+    border-radius: 10px;
+    color: rgb(8, 8, 8);
+    border: none;
+
+}
+button:hover{
+    background-color: rgb(74, 71, 71);
+}
+#clear{
+    background-color: green;
+
+}
+#clear:hover{
+    background-color: rgb(74, 71, 71);
+}
+#display{
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 35px;
+    width: 290px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 250px;
+        height: 300px;
+        top: 70px;
+    }
+
+    button {
+        width: 35px;
+        height: 35px;
+    }
+
+    #display {
+        width: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        width: 200px;
+        height: 300px;
+        top: 250px;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+    }
+
+    #display {
+        width: 180px;
+    }
+}
